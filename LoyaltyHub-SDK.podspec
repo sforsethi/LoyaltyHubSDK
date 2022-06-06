@@ -25,10 +25,10 @@ s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Raghav Sethi" => "rsraghavsethi@gmail.com" }
 
 # 5 - Replace this URL with your own GitHub page's URL (from the address bar)
-s.homepage = "https://github.com/sforsethi/LoyaltySDK"
+s.homepage = "https://github.com/sforsethi/LoyaltyHubSDK"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/sforsethi/LoyaltySDK.git",
+s.source = { :git => "https://github.com/sforsethi/LoyaltyHubSDK.git",
              :tag => "#{s.version}" }
 
 # 7
