@@ -36,6 +36,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="ghR-nI-0Hx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Fj-yJ-GO7">
                                 <rect key="frame" x="24" y="68" width="24" height="24"/>
                                 <constraints>
@@ -459,10 +462,12 @@
                             <constraint firstItem="kmT-b8-JU1" firstAttribute="centerX" secondItem="cdL-kk-mrF" secondAttribute="centerX" id="7iH-OJ-nPl"/>
                             <constraint firstItem="kmT-b8-JU1" firstAttribute="centerX" secondItem="VJm-1T-z6h" secondAttribute="centerX" id="8tA-zt-JVC"/>
                             <constraint firstItem="hS2-8G-pM4" firstAttribute="centerY" secondItem="1Fj-yJ-GO7" secondAttribute="centerY" id="9n0-3k-LMR"/>
+                            <constraint firstItem="ghR-nI-0Hx" firstAttribute="top" secondItem="FhM-bv-tos" secondAttribute="top" id="A3F-51-c5h"/>
                             <constraint firstItem="kny-KM-YfD" firstAttribute="centerX" secondItem="vuM-Rb-nf8" secondAttribute="centerX" id="D99-jU-aNV"/>
                             <constraint firstItem="kny-KM-YfD" firstAttribute="centerY" secondItem="vuM-Rb-nf8" secondAttribute="centerY" id="EDN-rs-0cZ"/>
                             <constraint firstItem="9vw-vf-7Wb" firstAttribute="leading" secondItem="VJm-1T-z6h" secondAttribute="leading" id="GRx-i8-xYw"/>
                             <constraint firstItem="VJm-1T-z6h" firstAttribute="trailing" secondItem="hS2-8G-pM4" secondAttribute="trailing" constant="24" id="KJF-gV-ZXw"/>
+                            <constraint firstItem="ghR-nI-0Hx" firstAttribute="leading" secondItem="VJm-1T-z6h" secondAttribute="leading" id="LkY-89-vsE"/>
                             <constraint firstItem="6MI-Lr-t9U" firstAttribute="leading" secondItem="VJm-1T-z6h" secondAttribute="leading" constant="24" id="Lt2-lx-FU4"/>
                             <constraint firstItem="Elu-p0-UTo" firstAttribute="centerY" secondItem="hS2-8G-pM4" secondAttribute="centerY" id="P2U-a0-VYj"/>
                             <constraint firstItem="VJm-1T-z6h" firstAttribute="trailing" secondItem="6MI-Lr-t9U" secondAttribute="trailing" constant="24" id="Pzu-it-cp2"/>
@@ -475,9 +480,11 @@
                             <constraint firstItem="5II-Pr-43n" firstAttribute="bottom" secondItem="VJm-1T-z6h" secondAttribute="bottom" id="hw9-uV-cd5"/>
                             <constraint firstItem="6MI-Lr-t9U" firstAttribute="top" secondItem="Elu-p0-UTo" secondAttribute="bottom" constant="30" id="j4B-yx-TXa"/>
                             <constraint firstItem="hS2-8G-pM4" firstAttribute="leading" secondItem="Elu-p0-UTo" secondAttribute="trailing" constant="16" id="kIQ-ZM-Xxr"/>
+                            <constraint firstItem="VJm-1T-z6h" firstAttribute="trailing" secondItem="ghR-nI-0Hx" secondAttribute="trailing" id="m3Z-vN-N7Z"/>
                             <constraint firstItem="kmT-b8-JU1" firstAttribute="top" secondItem="cdL-kk-mrF" secondAttribute="bottom" constant="8.5" id="rqN-HB-sJ5"/>
                             <constraint firstItem="5II-Pr-43n" firstAttribute="leading" secondItem="VJm-1T-z6h" secondAttribute="leading" id="skn-IJ-2Up"/>
                             <constraint firstItem="vuM-Rb-nf8" firstAttribute="top" secondItem="k8B-2H-n3d" secondAttribute="bottom" constant="12" id="snq-k0-l0b"/>
+                            <constraint firstAttribute="bottom" secondItem="ghR-nI-0Hx" secondAttribute="bottom" id="vQL-0O-fYi"/>
                             <constraint firstItem="6MI-Lr-t9U" firstAttribute="centerX" secondItem="VJm-1T-z6h" secondAttribute="centerX" id="wkj-RI-rR9"/>
                             <constraint firstItem="1Fj-yJ-GO7" firstAttribute="leading" secondItem="VJm-1T-z6h" secondAttribute="leading" constant="24" id="x9H-59-wei"/>
                             <constraint firstItem="k8B-2H-n3d" firstAttribute="centerX" secondItem="VJm-1T-z6h" secondAttribute="centerX" id="zE4-fF-WD6"/>
@@ -525,7 +532,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZa-pV-GTw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-32" y="144"/>
+            <point key="canvasLocation" x="-33.333333333333336" y="143.97321428571428"/>
         </scene>
         <!--Scratch Card View Controller-->
         <scene sceneID="oWR-g7-2iQ">
@@ -1773,6 +1780,7 @@
     <resources>
         <image name="Nike_Logo" width="162" height="162"/>
         <image name="Points" width="97" height="85"/>
+        <image name="bg.jpeg" width="122.16000366210938" height="81.360000610351562"/>
         <image name="bgGemsStar" width="87.5" height="88"/>
         <image name="bgPoints" width="36.5" height="40"/>
         <image name="bgScratchCard" width="178" height="135"/>

@@ -12,17 +12,21 @@ import SwiftyJSON
 internal class WebAPI    {
     //MARK: - New Get ScratchCards API
     class func getScratchCardsAPI(completion: @escaping (ScratchCardModel?)->Void, delegate: NewScratchCardViewController) {
-        let params : [String:Any] = [:
+        let params : [String:Any] = [
             
-//            "pageNo": delegate.pageNo,
-//            "pageSize": delegate.pageSize
+            "pageNo": 1,
+            "pageSize": 10
         ]
         
         let headers: HTTPHeaders = [
             
-//            "Authorization": "Bearer " + CommonFunctions.getUserData().authToken,
-//            "mallId": "mall_\(CommonFunctions.getPreferredMallId())"
+            "Authorization": "Bearer " + ClientData.authToken,
+            "mallId": "mall_\(ClientData.mallId)"
         ]
+        
+        print(headers)
+        print(params)
+        
         var scratchCardData: ScratchCardModel?
         print("URL: \(WebConstants.getScratchCardsAPI)")
         AF.request(WebConstants.getScratchCardsAPI, method: .get, parameters: params,headers: headers).responseJSON { response in

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A707CEA6ACC9760C512B2281 /* Pods_LoyaltyHub_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78A46E528478499002BB199 /* Pods_LoyaltyHub_SDK.framework */; };
+		D729D912284A038A00F5A5E4 /* bg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D729D911284A038A00F5A5E4 /* bg.jpeg */; };
+		D729D91A284A205000F5A5E4 /* ClientUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D729D919284A205000F5A5E4 /* ClientUtils.swift */; };
+		D729D926284A26E200F5A5E4 /* Pods_LoyaltyHub_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D729D923284A26CD00F5A5E4 /* Pods_LoyaltyHub_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D76616282848C9E40047936E /* Pods_LoyaltyHub_SDK.framework in Resources */ = {isa = PBXBuildFile; fileRef = D78A46E528478499002BB199 /* Pods_LoyaltyHub_SDK.framework */; };
 		D78A46272847646D002BB199 /* LoyaltyHub_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D78A46262847646D002BB199 /* LoyaltyHub_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D78A46B1284770C6002BB199 /* WebConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78A46B0284770C6002BB199 /* WebConstants.swift */; };
@@ -58,6 +61,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D729D926284A26E200F5A5E4 /* Pods_LoyaltyHub_SDK.framework in Embed Frameworks */,
 				D78A46E0284780AA002BB199 /* LoyaltyHub_SDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -68,6 +72,9 @@
 /* Begin PBXFileReference section */
 		16858E3FF6755C0622DE6031 /* Pods-LoyaltyHub-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoyaltyHub-SDK.debug.xcconfig"; path = "Target Support Files/Pods-LoyaltyHub-SDK/Pods-LoyaltyHub-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		681D159C95C30EC6FD4D8E84 /* Pods_LoyaltyHub_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoyaltyHub_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D729D911284A038A00F5A5E4 /* bg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpeg; sourceTree = "<group>"; };
+		D729D919284A205000F5A5E4 /* ClientUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientUtils.swift; sourceTree = "<group>"; };
+		D729D923284A26CD00F5A5E4 /* Pods_LoyaltyHub_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_LoyaltyHub_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78A46232847646D002BB199 /* LoyaltyHub_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoyaltyHub_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78A46262847646D002BB199 /* LoyaltyHub_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoyaltyHub_SDK.h; sourceTree = "<group>"; };
 		D78A46B0284770C6002BB199 /* WebConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebConstants.swift; sourceTree = "<group>"; };
@@ -125,12 +132,21 @@
 		44A3F46AE6B79AF324CF265E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D729D923284A26CD00F5A5E4 /* Pods_LoyaltyHub_SDK.framework */,
 				D78A46E428478499002BB199 /* Alamofire.framework */,
 				D78A46E528478499002BB199 /* Pods_LoyaltyHub_SDK.framework */,
 				D78A46E628478499002BB199 /* SwiftyJSON.framework */,
 				681D159C95C30EC6FD4D8E84 /* Pods_LoyaltyHub_SDK.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D729D910284A036400F5A5E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D729D911284A038A00F5A5E4 /* bg.jpeg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D78A46192847646D002BB199 = {
@@ -156,12 +172,14 @@
 		D78A46252847646D002BB199 /* LoyaltyHub-SDK */ = {
 			isa = PBXGroup;
 			children = (
+				D729D910284A036400F5A5E4 /* Resources */,
 				D78A46C22847752A002BB199 /* Storyboard */,
 				D78A46BF284774D6002BB199 /* Controller */,
 				D78A46B7284773E3002BB199 /* Model */,
 				D78A46AF284770A4002BB199 /* Network Layer */,
 				D78A46262847646D002BB199 /* LoyaltyHub_SDK.h */,
 				D78A46C528477E78002BB199 /* ScratchCardManager.swift */,
+				D729D919284A205000F5A5E4 /* ClientUtils.swift */,
 			);
 			path = "LoyaltyHub-SDK";
 			sourceTree = "<group>";
@@ -319,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D729D912284A038A00F5A5E4 /* bg.jpeg in Resources */,
 				D76616282848C9E40047936E /* Pods_LoyaltyHub_SDK.framework in Resources */,
 				D78A46C428477562002BB199 /* ScratchCard.storyboard in Resources */,
 			);
@@ -370,6 +389,7 @@
 				D78A46B1284770C6002BB199 /* WebConstants.swift in Sources */,
 				D78A46B3284771E8002BB199 /* WebAPI.swift in Sources */,
 				D78A46BC28477462002BB199 /* GetScratchedCardModel.swift in Sources */,
+				D729D91A284A205000F5A5E4 /* ClientUtils.swift in Sources */,
 				D78A46BA28477434002BB199 /* GetScratchCardModel.swift in Sources */,
 				D78A46BE28477490002BB199 /* BuyScratchCardModel.swift in Sources */,
 				D78A46C628477E78002BB199 /* ScratchCardManager.swift in Sources */,
